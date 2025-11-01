@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+  <link rel="stylesheet" href="styles/style.css">
+  <link rel="stylesheet" href="../public/fonts/themify-icons/themify-icons.css">
+  
+  <title>Band Web</title>
+</head>
+<script>
+  function toggleMenu() {
+    document.getElementById("nav").classList.toggle("show");
+  }
+</script>
+<body>
+  <div id="main">
+    <div id="header">
+      <div class="menu-toggle" onclick="toggleMenu()">
+        <i class="ti-align-justify"></i>
+      </div>
+      <ul id="nav">
+        <li><a href="#slider">Home</a></li>
+        <li><a href="#content">Band</a></li>
+        <li><a href="#tour">Tour</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li>
+          <a href="#more">
+            More
+            <i class="ti-angle-down"></i> 
+          </a>
+          <ul id="subnav">
+            <li><a href="">Merchandise</a></li>
+            <li><a href="">Extras</a></li>
+            <li><a href="">Media</a></li>
+            
+          </ul>
+          
+        </li>
+      </ul>
+      <div class="search">
+        <i class="ti-search"></i>
+      </div>
+    </div>
+
+    <div id="slider">
+      <div class="slide slide1">
+        <div class="text-content">
+          <h2 class="text-heading">Chicago</h2>
+          <div class="text-description">Thank you, Chicago - A night we won't forget.</div>
+        </div>
+      </div>
+      <div class="slide slide2">
+        <div class="text-content">
+          <h2 class="text-heading">New York</h2>
+          <div class="text-description">The atmosphere in New York is lorem ipsum.</div>
+        </div>
+      </div>
+      <div class="slide slide3">
+        <div class="text-content">
+          <h2 class="text-heading">Los Angeles</h2>
+          <div class="text-description">We had the best time playing at Venice Beach!</div>
+        </div>
+      </div>
+    </div>
+
+    <div id="content">
+      <div class="content-section">
+        <h2 class="section-heading">T H E  B A N D</h2>
+        <p class="section-sub-heading"><i>We love music</i></p>
+        <p class="about-text">We have created a fictional band website. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+        <div class="list-member">
+          <div class="member">
+            <p>Name</p>
+            <img src="../public/imgs/bandmember.jpg" alt="">
+          </div>
+          <div class="member">
+            <p>Name</p>
+            <img src="../public/imgs/bandmember.jpg" alt="">
+          </div>
+          <div class="member">
+            <p>Name</p>
+            <img src="../public/imgs/bandmember.jpg" alt="">
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="tour">
+      <div class="tour-section">
+        <div class="content-section">
+          <h2 class="section-heading" style="color: #fff;">T O U R D A T E S</h2>
+          <p class="section-sub-heading" style="color: #fff;"><i>Remember to book your tickets!</i></p>
+          <br>
+          <ul class="date-sold">
+            <li class="date" style="border-bottom: 1px solid #ddd;">
+              September
+              <span class="label">Sold out</span>
+            </li>
+            <li class="date" style="border-bottom: 1px solid #ddd;">
+              October
+              <span class="label">Sold out</span>
+            </li>
+            <li class="date" style="justify-content: space-between;">
+              November
+              <span class="remain">3</span>
+            </li>
+          </ul>
+          <div class="tickets">
+            <div class="place">
+              <img src="../public/imgs/newyork.jpg" alt="">
+              <div class="container-tickets">
+                <p><b>New York</b></p>
+                <p style="opacity: 0.60;">Fri 27 Nov 2016</p>
+                <p>Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
+                <button class="buy-ticket">Buy Tickets</button>
+              </div>
+            </div>
+            <div class="place">
+              <img src="../public/imgs/paris.jpg" alt="">
+              <div class="container-tickets">
+                <p><b>Paris</b></p>
+                <p style="opacity: 0.60;">Sat 28 Nov 2016</p>
+                <p>Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
+                <button class="buy-ticket">Buy Tickets</button>
+              </div>
+            </div>
+            <div class="place">
+              <img src="../public/imgs/sanfran.jpg" alt="">
+              <div class="container-tickets">
+                <p><b>San Francisco</b></p>
+                <p style="opacity: 0.60;">Sun 29 Nov 2016</p>
+                <p>Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
+                <button class="buy-ticket">Buy Tickets</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="contact-section">
+      <h2 class="section-heading">C O N T A C T</h2>
+      <p class ="section-sub-heading"><i>Fan? Drop a note!</i></p>
+      <div class="fill-section">
+        <div class="contact-info">
+          <p><i class="ti-location-pin"></i> Chicago, US</p>
+          <p><i class="ti-mobile"></i> Phone: +00 151515</p>
+          <p><i class="ti-email"></i > Email: mail@mail.com</p>
+        </div>
+        <div class="send-infor">
+          <div class="name-email">
+            <div class="field">
+              <input type="text" placeholder="Name" class="abc" >
+            </div>
+           <div class="field">
+            <input type="text" placeholder="Email" class="abc">
+           </div>
+          </div>
+          <input type="text" placeholder="Message" class="message">
+          <button class="send">SEND</button>
+        </div>
+      </div>
+
+      
+    </div>
+    <div class="map"></div>
+
+    <div id="footer">
+      <i class="ti-facebook"></i>
+      <i class="ti-instagram"></i>
+      <i class="ti-reddit"></i>
+      <i class="ti-printerest"></i>
+      <i class="ti-twitter"></i>
+      <i class="ti-linkedin"></i>
+    </div>
+
+  </div>
+</body>
+</html>
